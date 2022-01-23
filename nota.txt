@@ -1,0 +1,30 @@
+CRUD com Python #1
+criar uma pasta no disco local c, chamada python1;
+
+intalar um framework com Django, para criar uma maquina virtual: python -m venv venv
+
+sempre ativar o scripts: cd venv/Scripts
+
+c:\python1\venv\Scripts>activate
+
+instalar django: (venv) c:\python1\venv\Scripts>pip install Django
+
+voltar para pasta python1 e criar uma pasta projeto: django-admin startproject project .
+
+usar manage para gerenciar os comandos do django: python manage.py startapp app
+
+teste "hello world!" 
+abrir pasta em uma ide, ir em projetos settings.py e colocar o nome do app, em INSTALLED_APPS.
+
+ir em urls.py usar from app.views import home,
+path('',home)
+
+em views.py fazer:
+from django.http import HttpResponse
+
+# Create your views here.
+def home(request):
+    return HttpResponse('Hello World')
+
+depois ir no cmd:python manage.py runserver
+
