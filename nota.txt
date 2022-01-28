@@ -28,3 +28,11 @@ def home(request):
 
 depois ir no cmd:python manage.py runserver
 
+
+
+# tempalte
+
+bootstrap framework para front end, facilitar desenvolvimento css.
+
+entrar na pasta app, e criar pasta template, criar index.html...
+
